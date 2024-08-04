@@ -10,7 +10,7 @@ This repository has been tested with the following packages:
 - DGL == 2.0.0
 
 ## Notification
-- Before running main.py, please preprocess the dataset to generate the required hop files by specifying the dataset variable in save.py.
+- Before running [main.py](main.py), please preprocess the dataset to generate the required hop files by specifying the dataset variable in [save.py](save.py) and run it.
 - Please refer to [main.py](main.py) for the full hyper-parameters.
 
 ## How to Run
