@@ -17,10 +17,10 @@ This repository has been tested with the following packages:
 ```
 # cora
 python main.py --dataset cora --hops 10 --alpha 0.1 --hidden_dim 128 --ffn_dim 32 --n_heads 4 --dropout 0.75 --attention_dropout 0.4 --n_encoder_layers 1 --n_decoder_layers 1 --mask_rate 0.7 --remask_rate 0.4 --device 0 --batch_size 30000 --seeds 0 1 2 3 4 5 6 7 8 9 --activation gelu --pool_type max --pre_optim_type radam --pre_max_epoch 1500 --pre_lr 0.001 --pre_weight_decay 0.005 --tau 100 --optim_type adamw --max_epoch 300 --lr 0.04 --weight_decay 0.0003
-# pubmed
-python main.py --dataset pubmed --hops 3 --alpha 5 --hidden_dim 128 --ffn_dim 64 --n_heads 4 --dropout 0.7 --attention_dropout 0.5 --n_encoder_layers 2 --n_decoder_layers 3 --mask_rate 0.7 --remask_rate 0.1 --device 1 --batch_size 30000 --seeds 0 1 2 3 4 5 6 7 8 9 --activation elu --pool_type mean --pre_optim_type adam --pre_max_epoch 1500 --pre_lr 0.002 --pre_weight_decay 0.0005 --tau 50 --optim_type radam --max_epoch 900 --lr 0.01 --weight_decay 0.0003
 # citeseer
 python main.py --dataset citeseer --hops 3 --alpha 0.0001 --hidden_dim 128 --ffn_dim 32 --n_heads 2 --dropout 0.75 --attention_dropout 0.3 --n_encoder_layers 1 --n_decoder_layers 1 --mask_rate 0.55 --remask_rate 0.25 --device 0 --batch_size 30000 --seeds 0 1 2 3 4 5 6 7 8 9 --activation relu --pool_type mean --pre_optim_type radam --pre_max_epoch 1500 --pre_lr 0.004 --pre_weight_decay 0.005 --tau 50 --optim_type sgd --max_epoch 300 --lr 0.04 --weight_decay 0.0001
+# pubmed
+python main.py --dataset pubmed --hops 3 --alpha 5 --hidden_dim 128 --ffn_dim 64 --n_heads 4 --dropout 0.7 --attention_dropout 0.5 --n_encoder_layers 2 --n_decoder_layers 3 --mask_rate 0.7 --remask_rate 0.1 --device 1 --batch_size 30000 --seeds 0 1 2 3 4 5 6 7 8 9 --activation elu --pool_type mean --pre_optim_type adam --pre_max_epoch 1500 --pre_lr 0.002 --pre_weight_decay 0.0005 --tau 50 --optim_type radam --max_epoch 900 --lr 0.01 --weight_decay 0.0003
 # ogbn-arxiv
 python main.py --dataset ogbn-arxiv --hops 15 --alpha 0.005 --hidden_dim 512 --ffn_dim 256 --n_heads 2 --dropout 0.3 --attention_dropout 0.5 --n_encoder_layers 3 --n_decoder_layers 3 --mask_rate 0.2 --remask_rate 0.5 --device 1 --batch_size 5000 --seeds 0 1 2 3 4 5 6 7 8 9 --activation relu --pool_type mean --pre_optim_type adadelta --pre_max_epoch 100 --pre_lr 0.05 --pre_weight_decay 0.0005 --tau 20 --optim_type adamw --max_epoch 1000 --lr 0.5 --weight_decay 0
 # photo
