@@ -60,7 +60,6 @@ def load_dataset(dataset_name):
         idx = np.arange(num_nodes)
         np.random.shuffle(idx)
         perm = torch.tensor(idx)
-        # 随机划分，训练集和验证集和测试集的比例为1:1:8
         train_mask = torch.zeros(num_nodes, dtype=torch.bool)
         val_mask = torch.zeros(num_nodes, dtype=torch.bool)
         test_mask = torch.zeros(num_nodes, dtype=torch.bool)
