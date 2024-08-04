@@ -96,7 +96,7 @@ def load_dataset(dataset_name):
 
 
 if __name__ == "__main__":
-    dataset = 'ogbn-arxiv'
+    dataset = 'cora'
     hops = 15
     data_dict = load_dataset(dataset)
     if dataset == 'ogbn-arxiv':
