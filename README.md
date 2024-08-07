@@ -1,6 +1,6 @@
 # HopMAE: Self-Supervised Graph Masked Auto-Encoders from a Hop Perspective
 
-Implementation of ICIC2024 paper HopMAE: Self-Supervised Graph Masked Auto-Encoders from a Hop Perspective
+Implementation of ICIC2024 paper [HopMAE: Self-Supervised Graph Masked Auto-Encoders from a Hop Perspective](https://doi.org/10.1007/978-981-97-5666-7_29)
 
 ## Requirements
 
