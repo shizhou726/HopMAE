@@ -43,23 +43,12 @@ The code is implemented based on [GraphMAE](https://github.com/THUDM/GraphMAE) a
 If you find this work is helpful to your research, please consider citing our paper:
 
 ```
-@InProceedings{10.1007/978-981-97-5666-7_29,
-author="Shi, Chenjunhao
-and Li, Jin
-and Zhuang, Jianzhi
-and Yao, Xi
-and Huang, Yisong
-and Fu, Yang-Geng",
-editor="Huang, De-Shuang
-and Zhang, Chuanlei
-and Pan, Yijie",
-title="HopMAE: Self-supervised Graph Masked Auto-Encoders from a Hop Perspective",
-booktitle="Advanced Intelligent Computing Technology and Applications",
-year="2024",
-publisher="Springer Nature Singapore",
-address="Singapore",
-pages="343--355",
-abstract="With increasing popularity and larger real-world applicability, graph self-supervised learning (GSSL) can significantly reduce labeling costs by extracting implicit input supervision. As a promising example, graph masked auto-encoders (GMAE) can encode rich node knowledge by recovering the masked input components, e.g., features or edges. Despite their competitiveness, existing GMAEs focus only on neighboring information reconstruction, which totally ignores distant multi-hop semantics and thus fails to capture global knowledge. Furthermore, many GMAEs cannot scale on large-scale graphs since they suffer from memory bottlenecks with unavoidable full-batch training. To address these challenges and facilitate ``high-level'' discriminative semantics, we propose a simple yet effective framework (i.e., HopMAE) to encourage hop-perspective semantic interactions by adopting multi-hop input-rich reconstruction while supporting mini-batch training. Despite the rationales of the above designs, we still observe some limitations (e.g., sub-optimal generalizability and training instability), potentially due to the implicit gap between the task-triviality and input-richness of reconstruction. Therefore, to alleviate task-triviality and fully unleash the potential of our framework, we further propose a combined fine-grained loss function, which generalizes the existing ones and significantly improves the difficulties of reconstruction tasks, thus naturally alleviating over-fitting. Extensive experiments on eight benchmarks demonstrate that our method comprehensively outperforms many state-of-the-art counterparts.",
-isbn="978-981-97-5666-7"
+@inproceedings{shi2024hopmae,
+  title={HopMAE: Self-supervised Graph Masked Auto-Encoders from a Hop Perspective},
+  author={Shi, Chenjunhao and Li, Jin and Zhuang, Jianzhi and Yao, Xi and Huang, Yisong and Fu, Yang-Geng},
+  booktitle={International Conference on Intelligent Computing},
+  pages={343--355},
+  year={2024},
+  organization={Springer}
 }
 ```
