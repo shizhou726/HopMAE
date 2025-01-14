@@ -42,16 +42,16 @@ def node_classification_evaluation(args, model, data_dict, feat_origin, train_ma
         optimizer_f.step()
         
         with torch.no_grad():
-            model.eval()
+            classifier.eval()
             logits = classifier(x)
             val_acc = accuracy(logits[val_mask], label[val_mask])
             val_loss = criterion(logits[val_mask], label[val_mask])
         
-        if val_acc >= best_val_acc: 
-            best_val_acc = val_acc
-            best_val_epoch = epoch
-            test_acc = accuracy(logits[test_mask], label[test_mask])
-            test_loss = criterion(logits[test_mask], label[test_mask])
+            if val_acc >= best_val_acc: 
+                best_val_acc = val_acc
+                best_val_epoch = epoch
+                test_acc = accuracy(logits[test_mask], label[test_mask])
+                test_loss = criterion(logits[test_mask], label[test_mask])
             
     if not args.mute:
         print(f"--- TestAcc: {test_acc:.4f}, Best ValAcc: {best_val_acc:.4f} in epoch {best_val_epoch} --- ")
